@@ -15,8 +15,8 @@ public class TreeTest {
     @Test
     public void testInsert() {
 
-        Tree theTree = new Tree();
-        theTree.insert(50, 1.5);
+        Tree theTree = new Tree();                          // создание нового объекта Tree
+        theTree.insert(50, 1.5);                     // вставка узлов в дерево
         theTree.insert(25, 1.2);
         theTree.insert(75, 1.7);
         theTree.insert(12, 1.5);
@@ -28,8 +28,8 @@ public class TreeTest {
         theTree.insert(93, 1.5);
         theTree.insert(97, 1.5);
 
-        assertSame(12, theTree.find(12).iData);
-    }
+        assertSame(12, theTree.find(12).iData); // сравниваем ожидаемое значение с выходным
+    }//end testInsert()
 
     /* проверка
      * метода удаления, на выходе должен вернуть true
@@ -50,7 +50,7 @@ public class TreeTest {
         theTree.insert(93, 1.5);
         theTree.insert(97, 1.5);
 
-        assertSame(true,theTree.delete(12));
-    }
+        assertSame(true,theTree.delete(12));    // сравниваем ожидаемое значение с выходным
+    }//end testDelete()
 
-}
+}//end class TreeTest
